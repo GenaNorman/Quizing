@@ -5,7 +5,6 @@ import {
   MdMenuBook,
   MdPayment,
   MdAdminPanelSettings,
-  MdArrowDropDown,
 } from "react-icons/md";
 import {
   PiBookBookmarkFill,
@@ -28,7 +27,7 @@ const Navigations = [
         id: "01B",
         icon: <MdAdminPanelSettings />,
         name: "Admin Dashboard",
-        path: "/admindashboard",
+        path: "/Admin",
       },
       {
         id: "01A",

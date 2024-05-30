@@ -1,30 +1,32 @@
 import React, { useState } from "react";
-import { Navigations } from "../assets/SidebarItems";
+import { Navigations } from "../../data/SidebarItems";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoChevronBackOutline } from "react-icons/io5";
 import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
 
 function SideBar() {
-  const [isOpen, setIsOpen] = useState(false);
+  // console.log(Dropdown);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  function toggleNavbar() {
-    setIsOpen(!isOpen);
-  }
+  // function toggleNavbar() {
+  //   setIsOpen(!isOpen);
+  // }
   return (
     <>
       <div className="sidebar">
-        <span className="slider" onClick={toggleNavbar}>
+        {/* <span className="slider_" onClick={toggleNavbar}>
           {isOpen ? <IoIosArrowForward /> : <IoChevronBackOutline />}
-        </span>
+        </span> */}
         <div>
-          <h2 className="logo">Quizy</h2>
+          <h2 className="sidebar__logo">Quizy</h2>
         </div>
-        <ul className="topnav">
+        <ul className="sidebar__sidenav">
           {Navigations.map((navigate, index) => (
             <Navigate navigate={navigate} key={index} />
           ))}
         </ul>
+        <span className="sidebar__copyright">&copy;2024 T-chala</span>
       </div>
     </>
   );
@@ -36,13 +38,15 @@ function Navigate({ navigate }) {
     setIsOpen((show) => !show);
   }
   return (
-    <Link className="mainitem" to={navigate.path}>
-      <li className="sidebar_item" onClick={() => handleClick()}>
-        <div className="center">
-          <span>{navigate.icon}</span>
-          <span className="itemname">{navigate.name}</span>
+    <Link className="sidebar__mainitem" to={navigate.path}>
+      <li className="sidebar__item" onClick={() => handleClick()}>
+        <div className="sidebar__item-block">
+          <span className="sidebar__item-block-sidebaricon">
+            {navigate.icon}
+          </span>
+          <span className="sidebar__item-block-itemname">{navigate.name}</span>
 
-          <span className="iconguide">
+          <span className="sidebar__item-block-iconguide">
             {!isOpen ? navigate.forwardicon : navigate.downicon}
           </span>
         </div>

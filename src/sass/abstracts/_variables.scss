@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  /* ////COLORS/// */
+  --main-color: #4d07d8;
+  --body-color: #e5ecf8;
+  --content-color: #ffffff;
+  --body-text-color: #23313f;
+  --main-text-color: #ffffff;
+  --inactive-color: #4d07d8c8;
+  --active-color: #4d07d8f1;
+
+  /* /////TEXT FONT SIZE///// */
+  --main-heading: 2.5rem;
+  --sub-heading: 1.4rem;
+  --sub-heading-weight: 600;
+  --content-text: 1.5rem;
+  --input-label-font: 0.875rem;
+
+  /* /////TEXT COLOR///// */
+  --descriptive-text-color: rgba(0, 0, 0, 0.49);
+}

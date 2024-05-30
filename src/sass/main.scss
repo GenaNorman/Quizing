@@ -1,8 +1,13 @@
 // ===========COMPONENTS============ //
-@import "../components/styles/base";
+
+@import "../components/styles/navigation";
+@import "../components/styles/coursses";
+@import "../components/styles/creators";
+@import "../components/styles/dashboard";
+@import "../components/styles/user";
 
 // ===========PAGES============ //
-@import "../pages/styles/base";
+@import "../pages/styles/dashboard";
 
 // ===========SASS FILES============ //
 @import "abstracts/variables";
@@ -16,5 +21,3 @@
 @import "components/headers";
 
 @import "layouts/navigation";
-
-@import "pages/admindashboard";
