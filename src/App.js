@@ -77,6 +77,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AdminPage from "./pages/Dashboard/AdminPage";
 import CreatorPage from "./pages/Dashboard/CreatorPage";
 import StudentPage from "./pages/Dashboard/StudentPage";
+import HndPage from "./pages/Courses/HndPage";
 
 function App() {
   return (
@@ -86,6 +87,8 @@ function App() {
         <Route path="admin" element={<AdminPage />} />
         <Route path="creator" element={<CreatorPage />} />
         <Route path="student" element={<StudentPage />} />
+
+        <Route path="hndexams" element={<HndPage />} />
       </Routes>
     </BrowserRouter>
   );

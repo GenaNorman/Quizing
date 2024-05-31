@@ -1,5 +1,7 @@
-// ===========COMPONENTS============ //
+// ===========COMPONENT/SRC============//
+@import "../components/component";
 
+// ===========COMPONENTS============ //
 @import "../components/styles/navigation";
 @import "../components/styles/coursses";
 @import "../components/styles/creators";
@@ -8,6 +10,7 @@
 
 // ===========PAGES============ //
 @import "../pages/styles/dashboard";
+@import "../pages/styles/courses";
 
 // ===========SASS FILES============ //
 @import "abstracts/variables";

@@ -1,0 +1,196 @@
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hndexams {
+  width: 100%;
+}
+.header {
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+.slogan_box {
+  border-bottom: 0.1rem solid #8080804d;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.header_slogan {
+  text-align: center;
+  color: var(--descriptive-text-color);
+}
+/* //////Department name styles////// */
+.department {
+  width: 90%;
+  margin: 1rem auto;
+  margin-top: 1rem;
+  font-size: var(--sub-heading);
+  font-weight: var(--sub-heading-weight);
+  display: flex;
+  justify-content: space-between;
+}
+/* .department_name {
+  } */
+.btn {
+  font-size: 1rem;
+  align-items: center;
+  border: 0.1rem solid var(--inactive-color);
+  display: flex;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.4rem 0.7rem;
+  color: var(--inactive-color);
+}
+.btn:hover {
+  background-color: var(--active-color);
+  color: white;
+  transition: 0.4s;
+  transform: translateY(-0.3rem) scale(1.1);
+}
+/* //////specialties////// */
+.specialties {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.specialty {
+  width: 20%;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 0 0.6rem 0.6rem 0.6rem;
+  transition: 0.5s all ease;
+  background-color: var(--content-color);
+}
+.specialty:hover {
+  transform: translateY(-0.3rem) scale(1.06);
+}
+.specialty_icon {
+  width: 100%;
+}
+.specialty_papers {
+  margin-bottom: 0.6rem;
+}
+.iconimage {
+  width: 100%;
+}
+.specialty_name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+.open {
+  width: 100%;
+  justify-content: center;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: var(--inactive-color);
+  color: var(--main-text-color);
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.open:hover {
+  background-color: var(--active-color);
+  transform: translateY(-0.2rem) scale(1.1);
+}
+/* //////////////////POPUP STYLES///////////////////////////////////////////////// */
+.popup-content {
+  border-radius: 1rem;
+}
+.modal {
+  color: var(--body-text-color);
+  position: relative;
+  /* padding: 2rem 4rem; */
+}
+.modal_heading {
+  display: inline-block;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+}
+.modal_header {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background-color: var(--body-color);
+  display: inline-block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 1rem; */
+}
+.category {
+  width: 50%;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  margin-bottom: 1rem;
+  /* background-color: var(--inactive-color); */
+  border: 1px solid var(--inactive-color);
+  border-radius: 0.2rem;
+}
+.category_logo {
+  width: 47.5%;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+  /* background-color: var(--inactive-color); */
+  border: 1px solid var(--inactive-color);
+  border-radius: 0.2rem;
+}
+
+.category_name {
+  width: 47.5%;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+  /* background-color: var(--inactive-color); */
+  border: 1px solid var(--inactive-color);
+  border-radius: 0.2rem;
+}
+.category_btn {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  color: var(--content-color);
+  padding: 0.5rem 0.5rem;
+  background-color: var(--main-color);
+  border: 1px solid var(--inactive-color);
+  border-radius: 0.2rem;
+}
+/* .modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  } */
+.close {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 0.5;
+}
+/* //////////////////////////////////////////////////////// */
