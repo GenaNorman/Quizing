@@ -1,13 +1,16 @@
 import React from "react";
-// import Navigation from "../../components/layouts/Navigation";
 import StudentDashboard from "../../components/dashboard/StudentDashboard";
+import SideBar from "../../components/layouts/SideBar";
+import TopNav from "../../components/layouts/TopNav";
 
 function StudentPage() {
   return (
-    <div>
-      {/* <Navigation /> */}
-      <StudentDashboard />
-      <h1>Student</h1>
+    <div className="student">
+      <SideBar />
+      <div className="creator__block">
+        <TopNav />
+        <StudentDashboard />
+      </div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navigations } from "../../data/SidebarItems";
-import { IoIosArrowForward } from "react-icons/io";
-import { IoChevronBackOutline } from "react-icons/io5";
+// import { IoIosArrowForward } from "react-icons/io";
+// import { IoChevronBackOutline } from "react-icons/io5";
 import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
 
@@ -13,22 +13,20 @@ function SideBar() {
   //   setIsOpen(!isOpen);
   // }
   return (
-    <>
-      <div className="sidebar">
-        {/* <span className="slider_" onClick={toggleNavbar}>
+    <div className="sidebar">
+      {/* <span className="slider_" onClick={toggleNavbar}>
           {isOpen ? <IoIosArrowForward /> : <IoChevronBackOutline />}
         </span> */}
-        <div>
-          <h2 className="sidebar__logo">Quizy</h2>
-        </div>
-        <ul className="sidebar__sidenav">
-          {Navigations.map((navigate, index) => (
-            <Navigate navigate={navigate} key={index} />
-          ))}
-        </ul>
-        <span className="sidebar__copyright">&copy;2024 T-chala</span>
+      <div>
+        <h2 className="sidebar__logo">Quizy</h2>
       </div>
-    </>
+      <ul className="sidebar__sidenav">
+        {Navigations.map((navigate, index) => (
+          <Navigate navigate={navigate} key={index} />
+        ))}
+      </ul>
+      <span className="sidebar__copyright">&copy;2024 T-chala</span>
+    </div>
   );
 }
 function Navigate({ navigate }) {

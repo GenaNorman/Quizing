@@ -1,11 +1,6 @@
-// ==============SIDEBAR NAVIGATION=============== //
-// .sidebar::-webkit-scrollbar {
-//   width: 0.5rem;
-//   background-color: none;
-// }
-// .sidebar::-webkit-scrollbar-thumb {
-//   background-color: var(--body-color);
-//   border-radius: 10rem;
+// .navigation__layout {
+//   display: flex;
+//   justify-content: space-between;
 // }
 .sidebar {
   width: 17%;
@@ -13,16 +8,16 @@
   background: linear-gradient(to bottom right, #7732d3, red);
 
   height: 100vh;
-  position: fixed;
+  // position: fixed;
 
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
-  top: 0;
-  bottom: 0;
-  left: 0;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
 
   &__mainitem {
-    width: 14rem;
+    width: 17rem;
     color: white;
     align-items: center;
     margin-left: 1rem;
@@ -56,7 +51,7 @@
     color: white;
     &-block {
       display: flex;
-
+      align-items: center;
       font-weight: 500;
       font-size: 1.2rem;
       &-sidebaricon {
@@ -77,9 +72,9 @@
     font-size: 3.5rem;
     font-weight: 900;
     position: absolute;
-    border: 1px solid red;
+    border: 1px solid rgba(255, 0, 0, 0.486);
     font-size: 1.7rem;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.452);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 3rem;
@@ -90,7 +85,7 @@
 // ===============TOPBAR NAVIGATION===============//
 
 .topnav {
-  width: 81%;
+  width: 81.7%;
   background-color: var(--content-color);
   padding: 0.4rem 0.8rem;
   margin-left: auto;
@@ -151,7 +146,7 @@
   bottom: 1.5rem;
 
   padding: 0.1rem 0.6rem;
-  background-color: red;
+  background-color: rgb(255, 0, 0);
   color: white;
   align-items: center;
   border-radius: 10rem;
@@ -169,10 +164,32 @@
   height: 3rem;
   border-radius: 10rem;
 }
+
 .subroute {
-  padding-left: 1rem;
-  margin: 0.8rem 0;
+  margin: 0.5rem 0;
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+}
+// ================DROPDOWN COMPONENT============== //
+.subroute_item {
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 0.3rem;
+  width: 12rem;
+  color: white;
+}
+.subroute_item:hover {
+  transition: 0.6s;
+  background-color: rgb(0, 0, 0);
+  /* background-color: var(--inactive-color); */
+}
+.itemname {
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
+.big {
+  font-size: 5rem;
+  width: 20vw;
+  background-color: rebeccapurple;
 }

@@ -1,10 +1,11 @@
 import React from "react";
-import Navigation from "../layouts/Navigation";
 
 function AdminDashboard() {
-  return <div>
-    <Navigation />
-  </div>;
+  return (
+    <>
+      <h1 className="big">Admin</h1>
+    </>
+  );
 }
 
 export default AdminDashboard;

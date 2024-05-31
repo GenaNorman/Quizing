@@ -1,12 +1,11 @@
-import React from 'react'
-import Navigation from '../layouts/Navigation'
+import React from "react";
 
 function StudentDashboard() {
   return (
-    <div>
-      <Navigation />
-    </div>
-  )
+    <>
+      <h1 className="big">Student</h1>
+    </>
+  );
 }
 
-export default StudentDashboard
+export default StudentDashboard;

@@ -5,7 +5,9 @@ function Navigation() {
   return (
     <div className="navigation__layout">
       <SideBar />
-      <TopNav />
+      <div>
+        <TopNav />
+      </div>
     </div>
   );
 }
