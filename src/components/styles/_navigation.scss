@@ -12,7 +12,25 @@
   transition: all 0.5s;
 
   width: 25%;
+  &__toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    padding: 2rem 1.5rem;
+    &-logo {
+      font-size: 4rem;
+      font-weight: 900;
+      margin: 0 0;
+      // margin-bottom: 3rem;
+    }
+    &-close {
+      font-size: 4rem;
+      font-weight: 900;
+      color: white;
+      display: none;
+    }
+  }
   &__mainitem {
     width: 16rem;
     color: white;

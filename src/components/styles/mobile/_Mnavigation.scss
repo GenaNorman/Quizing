@@ -1,0 +1,66 @@
+@media only screen and (max-width: 412px) {
+  .search_bar {
+    width: 15rem;
+  }
+  .topnav {
+    width: 96%;
+    background-color: var(--content-color);
+    padding: 0.8rem 0.8rem;
+    margin-top: 0.5rem;
+    display: flex;
+    border-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar {
+    background: linear-gradient(
+      to bottom right,
+      rgba(252, 2, 56, 0.7529411765),
+      rgb(17, 24, 31)
+    );
+    height: 100vh;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    transition: all 0.5s;
+    position: absolute;
+    width: 70%;
+  }
+  .sidebar__toggle-close {
+    display: block;
+  }
+  .sidebar__mainitem {
+    width: 19rem;
+    color: white;
+    padding-right: 0rem;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  .sidebar__item-block-itemname {
+    margin-right: auto;
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: 2.2rem;
+  }
+  .sidebar__item-block-sidebaricon {
+    font-size: 2.2rem;
+  }
+  .sidebar__item-block-iconguide {
+    font-size: 2.2rem;
+  }
+  // // ================DROPDOWN STYLES======//
+  .itemname {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+  .subroute_item {
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 0.3rem;
+    width: 15rem;
+    color: white;
+  }
+  lement.style {
+    font-size: 2rem;
+  }
+}

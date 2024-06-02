@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import { Navigations } from "../../data/SidebarItems";
+import { RxCross2 } from "react-icons/rx";
 
 import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
 import { useProvider } from "../../context/HandlerContext.js";
 
 function SideBar() {
-  const { toggleNav } = useProvider();
+  const { toggleNav, hidesidebar } = useProvider();
   return (
     <div className={toggleNav ? "sidebar" : "translate"}>
-      <div>
-        <h2 className="sidebar__logo">Quizy</h2>
+      <div className="sidebar__toggle">
+        <h2 className="sidebar__toggle-logo">Quizy</h2>
+        <RxCross2 className="sidebar__toggle-close" onClick={hidesidebar} />
       </div>
       <ul className="sidebar__sidenav">
         {Navigations.map((navigate, index) => (
