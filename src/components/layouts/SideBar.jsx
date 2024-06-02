@@ -17,7 +17,7 @@ function SideBar() {
           <Navigate navigate={navigate} key={index} />
         ))}
       </ul>
-      <span className="sidebar__copyright">&copy;2024 T-chala</span>
+      {/* <span className="sidebar__copyright">&copy;2024 T-chala</span> */}
     </div>
   );
 }
