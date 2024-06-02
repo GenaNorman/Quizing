@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 
 const handlerContext = createContext();
 function HandlerContext({ children }) {
-  const [toggleNav, setToggleNav] = useState(false);
+  const [toggleNav, setToggleNav] = useState(true);
   function hidesidebar(params) {
     setToggleNav(!toggleNav);
   }
