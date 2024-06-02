@@ -6,7 +6,7 @@ function courses() {
   return (
     <div className="courses">
       <SideBar />
-      <div className="Admin__block">
+      <div className="courses__block">
         <TopNav />
         <HndSpecialties />
       </div>

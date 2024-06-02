@@ -1,12 +1,14 @@
 .courses {
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   &__block {
-    width: 83%;
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+    // width: 83%;
+    // display: flex;
+    // flex-basis: 10;
+    flex-grow: 2;
+    // flex-direction: column;
+    // align-self: stretch;
   }
 }

@@ -1,9 +1,16 @@
 import { IoIosNotificationsOutline, IoIosSearch } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useProvider } from "../../context/HandlerContext.js";
 
 function TopNav() {
+  const { hidesidebar } = useProvider();
   return (
     <div className="topnav">
       <div className="leftnav">
+        <GiHamburgerMenu
+          className="topnav__leftnav-hambuger"
+          onClick={hidesidebar}
+        />
         <input
           type="search"
           placeholder="Search for..."

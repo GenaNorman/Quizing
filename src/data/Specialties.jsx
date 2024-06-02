@@ -15,7 +15,7 @@ const initialSpecialty = [
   },
   {
     id: "s3",
-    image: "images/photoshp.png",
+    image: "images/Nws.png",
     name: "Graphic Design",
     papers: "3 years",
     path: "papers",

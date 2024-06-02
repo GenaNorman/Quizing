@@ -1,22 +1,14 @@
 import React, { useState } from "react";
 import { Navigations } from "../../data/SidebarItems";
-// import { IoIosArrowForward } from "react-icons/io";
-// import { IoChevronBackOutline } from "react-icons/io5";
+
 import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
+import { useProvider } from "../../context/HandlerContext.js";
 
 function SideBar() {
-  // console.log(Dropdown);
-  // const [isOpen, setIsOpen] = useState(false);
-
-  // function toggleNavbar() {
-  //   setIsOpen(!isOpen);
-  // }
+  const { toggleNav } = useProvider();
   return (
-    <div className="sidebar">
-      {/* <span className="slider_" onClick={toggleNavbar}>
-          {isOpen ? <IoIosArrowForward /> : <IoChevronBackOutline />}
-        </span> */}
+    <div className={toggleNav ? "sidebar" : "translate"}>
       <div>
         <h2 className="sidebar__logo">Quizy</h2>
       </div>
