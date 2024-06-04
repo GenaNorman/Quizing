@@ -11,7 +11,7 @@ function SideBar() {
   return (
     <div className={toggleNav ? "sidebar" : "translate"}>
       <div className="sidebar__toggle">
-        <h2 className="sidebar__toggle-logo">Quizy</h2>
+        <li className="sidebar__toggle-logo">Quizy</li>
         <RxCross2 className="sidebar__toggle-close" onClick={hidesidebar} />
       </div>
       <ul className="sidebar__sidenav">

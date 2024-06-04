@@ -3,14 +3,10 @@
   //   background-color: green;
   // }
   .specialties {
-    width: 90%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    row-gap: 3rem;
+    flex-wrap: nowrap;
   }
   .specialty {
-    width: 100%;
+    width: 30%;
   }
 }
