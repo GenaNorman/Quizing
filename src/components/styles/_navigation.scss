@@ -1,18 +1,19 @@
 .translate {
-  // transform: translateX(-90%);
-  width: 0;
+  transform: translateX(-90%);
+  // width: 0;
   transition: all 0.5s;
 }
 .sidebar {
-  background: linear-gradient(to bottom right, #fc0238c0, rgb(17, 24, 31));
+  background: linear-gradient(to bottom right, #fc0238, rgb(17, 24, 31));
 
   height: 100vh;
 
-  border-top-right-radius: 1.7rem;
-  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
   transition: all 0.5s;
 
-  width: 25%;
+  position: fixed;
+  width: 16%;
   &__toggle {
     display: flex;
     justify-content: space-between;
@@ -42,7 +43,6 @@
   &__logo {
     font-size: 1.4rem;
     font: 900 2rem Arial;
-    width: 100%;
   }
   &__sidenav {
     height: 85vh;
@@ -103,12 +103,10 @@
   width: 98.6%;
   background-color: var(--content-color);
   padding: 0.8rem 0.8rem;
-  // margin-left: auto;
+
   margin-top: 0.5rem;
   display: flex;
-  // position: fixed;
-  // right: 0;
-  // top: 0;
+
   border-radius: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -121,8 +119,13 @@
   color: gold;
   border-radius: 1rem;
   padding: 0.4rem;
+  display: none;
 }
-
+@media only screen and (max-width: 412px) {
+  .topnav__leftnav-hambuger {
+    display: block;
+  }
+}
 .leftnav {
   display: flex;
   cursor: pointer;

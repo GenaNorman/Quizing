@@ -20,15 +20,16 @@
   .sidebar {
     background: linear-gradient(
       to bottom right,
-      rgba(252, 2, 56, 0.7529411765),
+      rgb(252, 2, 56),
       rgb(17, 24, 31)
     );
     height: 100vh;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     transition: all 0.5s;
-    position: absolute;
-    width: 70%;
+    position: fixed;
+    width: 57%;
+    z-index: 100;
   }
   .sidebar__toggle-close {
     display: block;

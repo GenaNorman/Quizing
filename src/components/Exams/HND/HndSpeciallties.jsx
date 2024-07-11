@@ -1,7 +1,8 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+// import { IoChevronForward } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import initialSpecialty from "../../../data/Specialties";
+import { initialSpecialty } from "../../../data/Specialties";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
@@ -71,7 +72,7 @@ function HndSpecialties() {
           {initialSpecialty.map((specialty, index) => (
             <Specialty specialty={specialty} key={index} />
           ))}
-        </div>
+        </div>          
       </div>
     </>
   );

@@ -1,0 +1,50 @@
+.forward {
+  line-height: 0;
+  font-size: 2rem;
+  position: absolute;
+  top: 37%;
+  right: 02rem;
+
+  background: linear-gradient(
+    to bottom right,
+    rgb(252, 2, 56),
+    rgb(17, 24, 31)
+  );
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  color: white;
+  font-weight: 900;
+  opacity: 0.5;
+  transition: all 0.5s;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+.backward {
+  line-height: 0;
+  font-size: 2rem;
+  position: absolute;
+  top: 37%;
+  left: 1rem;
+  transform: rotate(180deg);
+  background: linear-gradient(
+    to bottom right,
+    rgb(252, 2, 56),
+    rgb(17, 24, 31)
+  );
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  color: white;
+  font-weight: 900;
+  opacity: 0.5;
+  transition: all 0.5s;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}

@@ -1,12 +1,16 @@
 @media only screen and (max-width: 412px) {
-  // body {
-  //   background-color: green;
-  // }
   .specialties {
+    width: 90%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    row-gap: 3rem;
   }
   .specialty {
-    width: 30%;
+    width: 100%;
   }
+}
+@media only screen and (max-width: 412px) {
+
 }
